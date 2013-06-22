@@ -1,10 +1,14 @@
 !!!5
 html(lang="en")
   head
+    if (typeof title !== "undefined")
+      title= title
+    else
+      title= globals.public.data.title
   body
     h1: a(href="/") My Blog!
     p: a(href="/about") about me
     if current.path[0] === "posts"
-      != partial("_decorator", { meta: meta, yield: yield })
+      != partial("_decorator", { type: type, yield: yield })
     else
       != yield
