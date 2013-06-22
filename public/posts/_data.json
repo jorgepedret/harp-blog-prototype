@@ -1,0 +1,11 @@
+{
+  "hello-world": {
+    "title": "Hello World",
+    "meta": "music"
+  },
+  "second-post": {
+    "title": "Second Post",
+    "meta": "tweet"
+  }
+}
+

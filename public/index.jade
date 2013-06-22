@@ -1,0 +1,2 @@
+- for(var post in globals.public.posts.data)
+  != partial("_decorator", { meta: globals.public.posts.data[post].meta, yield: partial("/posts/" + post) })

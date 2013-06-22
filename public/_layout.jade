@@ -1,0 +1,10 @@
+!!!5
+html(lang="en")
+  head
+  body
+    h1: a(href="/") My Blog!
+    p: a(href="/about") about me
+    if current.path[0] === "posts"
+      != partial("_decorator", { meta: meta, yield: yield })
+    else
+      != yield
