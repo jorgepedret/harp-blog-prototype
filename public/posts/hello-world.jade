@@ -1,2 +1,6 @@
-h1: a(href="/posts/hello-world") #{ title }
-p Hello dude
+h2: a(href="/posts/hello-world") #{ title }
+p Lorem ipsum Labore occaecat dolore incididunt laborum sunt consectetur incididunt voluptate proident officia dolor et occaecat in ut in irure dolore in aute esse nisi nulla velit est aute in.
+if current.path[0] == "index"
+  p: a(href="/posts/hello-world") Continue reading &rarr;
+else
+  p Commodo nostrud cupidatat ut ut quis laboris in Ut id enim in ut cillum in aute est. Lorem ipsum Nisi anim officia pariatur mollit dolor ex mollit reprehenderit ut commodo labore.

@@ -1,0 +1,11 @@
+{
+  "globals": {
+    "blog": {
+      "title": "Sample Blog"
+    },
+    "disqus": {
+      "show": true,
+      "id": "blahblahblah"
+    }
+  }
+}

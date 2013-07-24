@@ -1,0 +1,64 @@
+@import "_bootstrap";
+
+/*
+ * Layout
+ */
+.wrap {
+  max-width: @container-tablet;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/*
+ * Modules
+ */
+.branding {
+  margin-bottom: 20px;
+  border-bottom: #eee solid 1px;
+  padding: 20px 0;
+  > h1 {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.post {
+  border-bottom: #eee solid 1px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  .make-row();
+}
+.post-meta {
+  .make-column(2);
+}
+.post-content {
+  .make-column(10);
+  > h2 {
+    margin-top: 0;
+  }
+}
+.post-date {
+  background: #eee;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+  .date-day,
+  .date-month,
+  .date-year {
+    display: block;
+    color: #ddd;
+  }
+  .date-day {
+    font-size: 4em;
+    line-height: 0.8em;
+  }
+  .date-month {
+    font-size: 2em;
+    line-height: 0.9em;
+    text-transform: uppercase;
+  }
+  .date-year {
+    font-size: 1.8em;
+    line-height: 0.9em;
+  }
+}

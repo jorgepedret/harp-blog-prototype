@@ -1,5 +1,18 @@
-.post
+div(class="post post-#{ type }")
   .post-meta
-    p #{ type }
+    .post-date
+      span.date-day #{ date.day }
+      span.date-month #{ date.month }
+      span.date-year #{ date.year }
   .post-content
     != yield
+
+if globals.disqus.show && current.path[0] == "posts"
+  #disqus_thread
+  script
+    var disqus_shortname = 'blahblahblah';
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();

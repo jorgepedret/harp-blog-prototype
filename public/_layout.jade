@@ -5,10 +5,16 @@ html(lang="en")
       title= title
     else
       title= globals.public.data.title
+    link(rel="stylesheet", href="/css/main.css", type="text/css")
   body
-    h1: a(href="/") My Blog!
-    p: a(href="/about") about me
-    if current.path[0] === "posts"
-      != partial("_decorator", { type: type, yield: yield })
-    else
-      != yield
+    .wrap
+      header.branding
+        .pull-right
+          a(href="/about") about me
+        h1: a(href="/") #{ globals.blog.title }
+      .content
+        //- Don't modify this part unless you know what you're doing
+        if current.path[0] === "posts"
+          != partial("_decorator", { yield: yield })
+        else
+          != yield

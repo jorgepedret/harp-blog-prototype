@@ -1,2 +1,3 @@
-- for(var post in globals.public.posts.data)
-  != partial("_decorator", { type: globals.public.posts.data[post].type, yield: partial("/posts/" + post) })
+.posts
+  - for(var post in globals.public.posts.data)
+    != partial("/posts/" + post, { layout: "_decorator" });

@@ -1,10 +1,20 @@
 {
   "hello-world": {
     "title": "Hello World",
+    "date": {
+      "day": "24",
+      "month": "jul",
+      "year": "2013"
+    },
     "type": "music"
   },
   "second-post": {
     "title": "Second Post",
+    "date": {
+      "day": "20",
+      "month": "jul",
+      "year": "2013"
+    },
     "type": "tweet"
   }
 }
